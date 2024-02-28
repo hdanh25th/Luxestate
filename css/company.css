@@ -1,0 +1,45 @@
+.company .container {
+    display: flex;
+    align-items: flex-start;
+}
+
+
+.company .company__content {
+    flex: 1;
+}
+
+.company .company__content .company__content-text p {
+    color: var(--main-cl);
+}
+
+.company .company__box {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 44px;
+}
+
+.company .company__box .company__box-items {
+    width: 200px;
+    height: 200px;
+    background-color: var(--grey-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.company .company__box .company__box-items .company__box-numbers {
+    color: var(--yellow-bg);
+    font-family: msb;
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+
+.company .company__box .company__box-items .company__box-text {
+    font-size: 14px;
+    font-family: msb;
+    line-height: normal;
+    color: var(--main-cl);
+}

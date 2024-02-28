@@ -1,0 +1,214 @@
+html {
+    --header-height: 80px;
+    --cont-width: 1140px;
+    --cont-pad: calc((100vw - var(--cont-width) - 15px) / 2);
+    --time: 0.4s;
+    --spacing: -0.4px;
+    --main-cl: #1f373d;
+    --main-light-cl: #919eb1;
+    --yellow-bg: #ffcc01;
+    --white-cl: #ffffff;
+    --grey-bg: #f6f5f4;
+    --black-cl: #3f3f3f;
+    --fs1: 62px;
+    --fs2: 40px;
+    --fs3: 25px
+}
+
+body {
+    font-size: 13px;
+    font-family: m;
+    line-height: 30px;
+    letter-spacing: var(--spacing);
+}
+
+.scbg {
+    background-color: var(--grey-bg);
+}
+
+.container {
+    max-width: var(--cont-width);
+    padding: 0 15px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.pad {
+    padding: 80px 0;
+}
+
+.textbox {
+    margin-bottom: 42px;
+}
+
+.des {
+    max-width: 360px;
+    color: var(--main-cl);
+    margin-top: 17px;
+}
+
+.heading {
+    font-size: var(--fs1);
+    font-family: mb;
+    line-height: 78px;
+    color: var(--main-cl);
+}
+
+.heading.lv2 {
+    font-size: var(--fs2);
+    line-height: 50px;
+}
+
+.heading.lv3 {
+    font-size: var(--fs3);
+    font-family: msb;
+    line-height: 50px;
+}
+
+.ru__btn {
+    text-decoration: none;
+    display: flex;
+    width: fit-content;
+    height: 80px;
+    padding: 0 55px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-cl);
+    color: var(--white-cl);
+    font-size: 18px;
+    font-family: msb;
+    line-height: normal;
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.ru__btn:hover {
+    background-color: var(--yellow-bg);
+    color: var(--white-cl);
+}
+
+/* type number btn disable */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Component start */
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.same {
+    width: calc(100% / 3);
+    padding: 17.5px 15px;
+}
+
+.same .same__img {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 108.5%;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.same .same__img img {
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    object-fit: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.same .same__img:hover img {
+    transform: scale(1.1) translate(-50%, -50%);
+}
+
+.same .same__content {
+    background-color: var(--white-cl);
+    padding: 18px 20px 26px 20px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.same .same__content .same__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+.same .same__content .same__info .same__yellow {
+    font-size: 18px;
+    font-family: msb;
+    letter-spacing: var(--spacing);
+    color: var(--yellow-bg);
+    line-height: normal;
+}
+
+.same .same__content .same__title a {
+    font-size: 15px;
+    font-family: msb;
+    line-height: normal;
+    color: var(--main-cl);
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 40px;
+}
+
+
+.same .same__content .same__info .same__detail {
+    display: flex;
+    align-items: center;
+}
+
+/* Component end */
+
+.backBtn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--yellow-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+    border-radius: 7px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.backBtn.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.backBtn figure {
+    transform: rotate(180deg);
+    padding-top: 8px;
+}
+
+.backBtn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}

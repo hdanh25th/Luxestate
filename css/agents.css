@@ -1,0 +1,28 @@
+/* Others css aka component are in general.css */
+
+.agents .list .same .same__content .same__info {
+    margin-top: 17px;
+}
+
+.agents .list .same .same__content .same__title a {
+    height: unset;
+}
+
+.agents .list .same .same__content .same__info .same__yellow {
+    font-size: 15px;
+}
+
+.agents .list .same .same__content .same__info .same__detail a {
+    display: flex;
+    margin-left: 37px;
+}
+
+.agents .list .same .same__content .same__info .same__detail a svg path {
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.agents .list .same .same__content .same__info .same__detail a:hover svg path {
+    fill: var(--yellow-bg);
+}

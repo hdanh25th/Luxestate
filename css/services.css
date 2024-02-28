@@ -1,0 +1,44 @@
+/* My ver */
+
+/* .services .services__wrapper {
+    display: flex;
+}
+
+.services .services__wrapper .services__info {
+    padding-left: 124px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+} */
+
+/* Vid ver */
+
+.services .services__wrapper {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.services .services__wrapper .services__img,
+.services .services__wrapper .services__info {
+    width: calc(100% / 2 - 30px);
+    margin: 0 15px;
+}
+
+.services .services__wrapper .services__img img {
+    height: 100%;
+}
+
+.services .services__wrapper .services__info {
+    padding-left: 100px;
+}
+
+.services .services__wrapper .services__info .services__info-items:not(:last-child) {
+    margin-bottom: 41px;
+}
+
+
+
+.services .services__wrapper .services__info .services__info-items .services__info-text {
+    margin-top: 16px;
+    color: var(--main-cl);
+}

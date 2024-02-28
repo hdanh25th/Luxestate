@@ -1,0 +1,214 @@
+.touch {
+    display: flex;
+    padding-left: 15px;
+}
+
+.touch .touch__wrapper {
+    width: calc(665px + var(--cont-pad));
+    padding-left: var(--cont-pad);
+}
+
+.touch .touch__img {
+    flex: 1;
+    margin-left: -15px;
+}
+
+.touch .touch__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.touch .touch__wrapper .touch__form {
+    max-width: 445px;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input {
+    margin-bottom: 25px;
+}
+
+
+.touch .touch__wrapper .touch__form .touch__form-input:nth-child(1) {
+    border-bottom: 2px solid #c7ccd5;
+    padding-bottom: 5px;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input:nth-child(2),
+.touch__form-input:nth-child(3) {
+    border-bottom: 1px solid var(--main-light-cl);
+    padding-bottom: 5px;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input:nth-child(4) {
+    border-bottom: 1px solid var(--main-light-cl);
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input input[type="text"],
+input[type="text"]::placeholder,
+textarea,
+textarea::placeholder,
+select,
+input[type="number"],
+input[type="number"]::placeholder {
+    width: 100%;
+    border: unset;
+    outline: unset;
+    background-color: unset;
+    resize: none;
+    font-size: 13px;
+    font-family: m;
+    line-height: 30px;
+    letter-spacing: var(--spacing);
+    color: var(--main-light-cl);
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input select {
+    width: initial;
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+    min-width: 50px;
+    background: url(../img/icon-downTriangle@2x.png) no-repeat;
+    background-size: 10px;
+    background-position: 28px 12px;
+    cursor: pointer;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input input[type="number"],
+input[type="number"]::placeholder {
+    width: initial;
+    margin-left: 16px;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input textarea {
+    height: 125px;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .touch__same-title {
+    font-size: 15px;
+    font-family: msb;
+    line-height: normal;
+    color: var(--main-cl);
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper {
+    margin-top: 5px;
+    display: flex;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper div {
+    margin-right: 74px;
+    display: flex;
+    align-items: center;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper div input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper div input[type="radio"]+label {
+    position: relative;
+    padding-left: 24px;
+    color: var(--main-light-cl);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper div input[type="radio"]+label::before {
+    content: "";
+    height: 13px;
+    width: 13px;
+    border: 1px solid var(--main-light-cl);
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper div input[type="radio"]+label::after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    border: 1px solid var(--main-light-cl);
+    border-radius: 50px;
+    position: absolute;
+    left: 2.5px;
+    background-color: var(--main-cl);
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper div input[type="radio"]:not(:checked)+label::after {
+    /* opacity: 0; */
+    transform: scale(0);
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .radio__wrapper div input[type="radio"]:checked+label::after {
+    /* opacity: 1; */
+    transform: scale(1);
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+
+.touch .touch__wrapper .touch__form .touch__form-input .check__wrapper div input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .check__wrapper div input[type="checkbox"]+label {
+    position: relative;
+    padding-left: 24px;
+    color: var(--main-light-cl);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .check__wrapper div input[type="checkbox"]+label::before {
+    content: "";
+    height: 13px;
+    width: 13px;
+    border: 1px solid var(--main-light-cl);
+    border-radius: 1px;
+    position: absolute;
+    left: 0;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .check__wrapper div input[type="checkbox"]+label::after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: url(../img/icon-checked.png) no-repeat;
+    position: absolute;
+    left: 2.5px;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .check__wrapper div input[type="checkbox"]:not(:checked)+label::after {
+    /* opacity: 0; */
+    transform: scale(0);
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input .check__wrapper div input[type="checkbox"]:checked+label::after {
+    opacity: 1;
+    transform: scale(1);
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.ru__btn.change {
+    height: 70px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.touch .touch__wrapper .touch__form .touch__form-input:nth-child(6) {
+    margin-bottom: 33px;
+}

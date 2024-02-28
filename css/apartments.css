@@ -1,0 +1,58 @@
+/* Others css aka component are in general.css */
+
+.apartments .list .same .same__content .same__info .same__detail .apartments__furni {
+    margin-left: 20px;
+}
+
+.apartments .list .same .same__content .same__info .same__detail .apartments__furni img {
+    margin-right: 10px;
+}
+
+.apartments .list .same .same__content .same__info .same__detail .apartments__furni span {
+    line-height: 37px;
+    color: var(--main-light-cl);
+}
+
+.apartments .apartments__btn {
+    height: 70px;
+    background-color: var(--white-cl);
+    padding: 0 44px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--main-cl);
+    font-size: 15px;
+    line-height: normal;
+    margin-top: 35px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.apartments .apartments__btn:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-cl);
+    transform: translateX(-100%);
+    left: -1px;
+    z-index: -1;
+    transition: var(--time);
+    -webkit-transition: var(--time);
+    -o-transition: var(--time);
+}
+
+.apartments .apartments__btn:hover::before {
+    transform: translateX(0);
+    width: calc(100% + 1px);
+}
+
+.apartments .apartments__btn:hover {
+    color: var(--white-cl);
+}

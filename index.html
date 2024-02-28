@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXESTATE</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Facebook -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <!-- Twitter -->
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+    <meta name="twitter:card" content="">
+    <meta name="twitter:site" content="">
+    <!-- Favicon -->
+    <link rel="icon" href="./img/favicon.ico">
+    <!-- These CSS just for not killing your eyes, not for performance  -->
+    <link rel="stylesheet" href="./css/loading.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/mv.css">
+    <link rel="stylesheet" href="./css/company.css">
+    <link rel="stylesheet" href="./css/apartments.css">
+    <link rel="stylesheet" href="./css/how.css">
+    <link rel="stylesheet" href="./css/services.css">
+    <link rel="stylesheet" href="./css/agents.css">
+    <link rel="stylesheet" href="./css/location.css">
+    <link rel="stylesheet" href="./css/touch.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+</head>
+
+<body>
+    <div class="loading">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin: auto; background: none; display: block; shape-rendering: auto;" width="200px" height="200px"
+            viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <g transform="translate(50 50)">
+                <g>
+                    <animateTransform attributeName="transform" type="rotate" values="0;45" keyTimes="0;1"
+                        dur="0.6451612903225806s" repeatCount="indefinite"></animateTransform>
+                    <path
+                        d="M29.491524206117255 -5.5 L37.491524206117255 -5.5 L37.491524206117255 5.5 L29.491524206117255 5.5 A30 30 0 0 1 24.742744050198738 16.964569457146712 L24.742744050198738 16.964569457146712 L30.399598299691117 22.621423706639092 L22.621423706639096 30.399598299691114 L16.964569457146716 24.742744050198734 A30 30 0 0 1 5.5 29.491524206117255 L5.5 29.491524206117255 L5.5 37.491524206117255 L-5.499999999999997 37.491524206117255 L-5.499999999999997 29.491524206117255 A30 30 0 0 1 -16.964569457146705 24.742744050198738 L-16.964569457146705 24.742744050198738 L-22.621423706639085 30.399598299691117 L-30.399598299691117 22.621423706639092 L-24.742744050198738 16.964569457146712 A30 30 0 0 1 -29.491524206117255 5.500000000000009 L-29.491524206117255 5.500000000000009 L-37.491524206117255 5.50000000000001 L-37.491524206117255 -5.500000000000001 L-29.491524206117255 -5.500000000000002 A30 30 0 0 1 -24.742744050198738 -16.964569457146705 L-24.742744050198738 -16.964569457146705 L-30.399598299691117 -22.621423706639085 L-22.621423706639092 -30.399598299691117 L-16.964569457146712 -24.742744050198738 A30 30 0 0 1 -5.500000000000011 -29.491524206117255 L-5.500000000000011 -29.491524206117255 L-5.500000000000012 -37.491524206117255 L5.499999999999998 -37.491524206117255 L5.5 -29.491524206117255 A30 30 0 0 1 16.964569457146702 -24.74274405019874 L16.964569457146702 -24.74274405019874 L22.62142370663908 -30.39959829969112 L30.399598299691117 -22.6214237066391 L24.742744050198738 -16.964569457146716 A30 30 0 0 1 29.491524206117255 -5.500000000000013 M0 -20A20 20 0 1 0 0 20 A20 20 0 1 0 0 -20"
+                        fill="#0055a5"></path>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <header class="forChange">
+        <!-- Start -->
+        <div class="container">
+            <a href="./" class="logo">
+                <img srcset="./img/logo-luxestate@2x.png 2x" alt="luxestate">
+            </a>
+            <ul class="header__nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Apartments</a></li>
+                <li><a href="#">How It Work</a></li>
+                <li><a href="#">Agents</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="header__cta">
+                <a href="#" class="header__cta-btn transparent">Join Us</a>
+                <a href="#" class="header__cta-btn">Getting Started</a>
+            </div>
+        </div>
+        <!-- End -->
+    </header>
+
+    <main>
+        <section class="mv">
+            <!-- Start -->
+            <div class="container">
+                <div class="mv__text">
+                    <h1 class="heading" id="forClock">Find Your New<br>
+                        Modern Apartment
+                    </h1>
+                    <div class="mv__text-search">
+                        <div class="mv__input">
+                            <i><img srcset="./img/icon-magnifying@2x.png 2x" alt="luxestate"></i>
+                            <input type="text" placeholder="Search locations">
+                        </div>
+                        <div class="mv__btn">Search</div>
+                    </div>
+                </div>
+
+                <div class="mv__scroll">
+                    <p>Scroll Down</p>
+                </div>
+
+                <div class="mv__contact">
+                    <a href="tel:(000) 123-4567" class="mv__contact-items">
+                        <i><img srcset="./img/icon-phone@2x.png 2x" alt=""></i>
+                        <span>(000) 123-4567</span>
+                    </a>
+                    <a href="https://goo.gl/maps/GY6PsrA8JAe9wmE66" target="_blank" class="mv__contact-items">
+                        <i><img srcset="./img/icon-location@2x.png 2x" alt=""></i>
+                        <span>Melbourne,Australia</span>
+                    </a>
+                </div>
+            </div>
+            <!-- End -->
+        </section>
+
+        <section class="company pad">
+            <div class="container">
+                <div class="company__content">
+                    <div class="textbox">
+                        <h2 class="heading lv2">Our’s Company<br>Statistics</h2>
+                    </div>
+                    <div class="company__content-text">
+                        <p>
+                            In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by
+                            eod, cob or whatever comes
+                            first agile at the end of the day. Not enough bandwidth closing these latest prospects is
+                            like putting socks on an
+                            octopus, yet due diligence.
+                        </p>
+                        <br>
+                        <p>
+                            We need to get all stakeholders up to speed and in the right place hard stop, or
+                            technologically savvy or pre launch.
+                            Pro-sumer software commitment to the cause offline this discussion and wiggle room blue sky.
+                            Beef up teams were able to
+                            drive adoption and awareness. Screw the pooch killing it.
+                        </p>
+                    </div>
+                </div>
+                <div class="company__box">
+                    <div class="company__box-items">
+                        <p class="company__box-numbers heading lv2">748</p>
+                        <p class="company__box-text">Apartments</p>
+                    </div>
+                    <div class="company__box-items">
+                        <p class="company__box-numbers heading lv2">3854</p>
+                        <p class="company__box-text">Clients</p>
+                    </div>
+                    <div class="company__box-items">
+                        <p class="company__box-numbers heading lv2">24</p>
+                        <p class="company__box-text">Employees</p>
+                    </div>
+                    <div class="company__box-items">
+                        <p class="company__box-numbers heading lv2">14</p>
+                        <p class="company__box-text">Awards</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="apartments pad scbg">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading lv2">More Then 500+<br>Appartments For Rent</h2>
+                </div>
+                <ul class="list">
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img1-apartments.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Random Street, Apt B453, New York Random Street, Apt B453, New York Random
+                                    Street, Apt B453, New York</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">$3,500</p>
+                                <div class="same__detail">
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-shower@2x.png 2x" alt="luxestate">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-bed@2x.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img2-apartments.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Random Street, Apt B453, New York</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">$3,500</p>
+                                <div class="same__detail">
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-shower@2x.png 2x" alt="luxestate">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-bed@2x.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img3-apartments.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Random Street, Apt B453, New York</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">$3,500</p>
+                                <div class="same__detail">
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-shower@2x.png 2x" alt="luxestate">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-bed@2x.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img4-apartments.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Random Street, Apt B453, New York</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">$3,500</p>
+                                <div class="same__detail">
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-shower@2x.png 2x" alt="luxestate">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-bed@2x.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img5-apartments.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Random Street, Apt B453, New York</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">$3,500</p>
+                                <div class="same__detail">
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-shower@2x.png 2x" alt="luxestate">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-bed@2x.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img6-apartments.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Random Street, Apt B453, New York</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">$3,500</p>
+                                <div class="same__detail">
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-shower@2x.png 2x" alt="luxestate">
+                                        <span>2 BA</span>
+                                    </div>
+                                    <div class="apartments__furni">
+                                        <img srcset="./img/icon-bed@2x.png 2x" alt="">
+                                        <span>2 BD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="apartments__btn">View All Apartments</a>
+            </div>
+        </section>
+
+        <section class="how pad">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading lv2">How it works?</h2>
+                    <p class="des">
+                        In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod,
+                        cob
+                        or whatever comes
+                        first agile at the end of the day.
+                    </p>
+                </div>
+                <div class="how__list">
+                    <a href="#" class="how__list-items active">
+                        <p class="how__list-number">01</p>
+                        <h3 class="how__list-title">01<span>Find Your Location</span></h3>
+                        <div class="how__list-push">
+                            <p class="how__list-text">In this space market-facing, yet UI work flows , or bake it in.
+                                Red flag we neef the day.
+                            </p>
+                            <div class="how__list-link" href="#">Find Location</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="how__list-items">
+                        <p class="how__list-number">02</p>
+                        <h3 class="how__list-title">02<span>Find Apartment</span></h3>
+                        <div class="how__list-push">
+                            <p class="how__list-text">In this space market-facing, yet UI work flows , or bake it in.
+                                Red flag we neef the day.
+                            </p>
+                            <div class="how__list-link" href="#">Find Apartment</div>
+                        </div>
+                    </a>
+
+                    <a href="#" class="how__list-items">
+                        <p class="how__list-number">03</p>
+                        <h3 class="how__list-title">03<span>Make Contact</span></h3>
+                        <div class="how__list-push">
+                            <p class="how__list-text">In this space market-facing, yet UI work flows , or bake it in.
+                                Red flag we neef the day.
+                            </p>
+                            <div class="how__list-link" href="#">Make Contact</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services pad">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading lv2">Services</h2>
+                    <p class="des">
+                        In this space market-facing, yet UI work flows
+                        , or bake it in. Red flag we need a first agile
+                        at the end of the day.
+                    </p>
+                </div>
+                <div class="services__wrapper">
+                    <div class="services__img">
+                        <img src="./img/img-service.jpg" alt="luxestate">
+                    </div>
+                    <div class="services__info">
+                        <div class="services__info-items">
+                            <h3 class="heading lv3">Renting</h3>
+                            <p class="services__info-text">
+                                In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap
+                                by
+                                eod, cob or whatever comes
+                                first agile at the end of the day. Not enough bandwidth closing these latest prospects
+                                is
+                                like putting socks on an
+                                octopus, yet due diligence
+                            </p>
+                        </div>
+
+                        <div class="services__info-items">
+                            <h3 class="heading lv3">Selling</h3>
+                            <p class="services__info-text">
+                                In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap
+                                by
+                                eod, cob or whatever comes
+                                first agile at the end of the day. Not enough bandwidth closing these latest prospects
+                                is
+                                like putting socks on an
+                                octopus, yet due diligence
+                            </p>
+                        </div>
+
+                        <div class="services__info-items">
+                            <h3 class="heading lv3">Building</h3>
+                            <p class="services__info-text">
+                                In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap
+                                by
+                                eod, cob or whatever comes
+                                first agile at the end of the day. Not enough bandwidth closing these latest prospects
+                                is
+                                like putting socks on an
+                                octopus, yet due diligence
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="agents pad scbg">
+            <div class="container">
+                <div class="textbox">
+                    <h2 class="heading lv2">Meet Our Agents</h2>
+                    <p class="des">
+                        In this space market-facing, yet UI work flows , or bake it in. Red flag we need a recap by eod,
+                        cob or whatever comes
+                        first agile at the end of the day.
+                    </p>
+                </div>
+                <ul class="list">
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img1-agent.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title agents">
+                                <a href="#">Agent 01</a>
+                            </h3>
+                            <div class="same__info agents">
+                                <p class="same__yellow">Mr. Luke Skywalker</p>
+                                <div class="same__detail">
+                                    <a href="#">
+                                        <svg width="8" height="16" viewBox="0 0 8 16" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 5.32071H5.32067V3.80052C5.32067 3.0161 5.38451 2.52204 6.50869 2.52204H7.92855V0.104941C7.23762 0.0334917 6.5429 -0.00147268 5.84741 4.75059e-05C3.78527 4.75059e-05 2.28029 1.25952 2.28029 3.57173V5.32071H0V8.36109L2.28029 8.36033V15.2019H5.32067V8.35881L7.65112 8.35805L8 5.32071Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 1.53902C15.4111 1.80055 14.7785 1.97654 14.1145 2.05592C14.7927 1.64978 15.3126 1.00673 15.5576 0.239991C14.9237 0.615977 14.221 0.889197 13.4727 1.03688C12.874 0.398754 12.0211 0 11.0771 0C9.26426 0 7.79478 1.4701 7.79478 3.28234C7.79478 3.53956 7.82431 3.79062 7.8797 4.03C5.1518 3.89339 2.73343 2.58636 1.1138 0.599977C0.831968 1.08488 0.670128 1.64855 0.670128 2.25099C0.670128 3.38941 1.24918 4.39429 2.12976 4.98258C1.59194 4.96535 1.0855 4.81766 0.643052 4.57213C0.643052 4.58629 0.643052 4.59921 0.643052 4.61336C0.643052 6.20407 1.77409 7.53079 3.27618 7.8317C3.00112 7.90677 2.71066 7.94677 2.41098 7.94677C2.19992 7.94677 1.99377 7.92585 1.79378 7.88831C2.21161 9.19226 3.42387 10.1418 4.86012 10.1682C3.73709 11.0488 2.32176 11.5737 0.783355 11.5737C0.518749 11.5737 0.257221 11.5583 0 11.5276C1.45287 12.4586 3.17772 13.002 5.03181 13.002C11.0697 13.002 14.3705 8.00031 14.3705 3.66263C14.3705 3.52048 14.3674 3.37895 14.3613 3.23803C15.0031 2.77466 15.56 2.19684 16 1.53902Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0C3.58854 0 0 3.58854 0 8C0 12.4115 3.58854 16 8 16C12.4115 16 16 12.4115 16 8C16 3.58854 12.4115 0 8 0ZM8 1.33333C9.6901 1.33333 11.2214 1.96875 12.3958 3C12.2708 3.17448 12.1016 3.38542 11.8333 3.64583C11.263 4.19792 10.3516 4.86198 8.95833 5.375C8.01563 3.63281 7.09115 2.32292 6.47917 1.5C6.96615 1.38802 7.47656 1.33333 8 1.33333ZM5.16667 1.95833C5.71354 2.67448 6.6875 4.0026 7.66667 5.77083C4.95573 6.48958 2.46875 6.58073 1.47917 6.58333C1.92188 4.52344 3.30729 2.82813 5.16667 1.95833ZM13.3125 3.97917C14.125 5.05469 14.6302 6.38542 14.6667 7.83333C14.0729 7.70052 13.1979 7.57031 12.0625 7.5625C11.4714 7.5599 10.8021 7.60156 10.0833 7.6875C9.91667 7.30729 9.73698 6.9401 9.5625 6.58333C11.0573 6.01042 12.0755 5.25521 12.75 4.60417C12.9792 4.38021 13.1589 4.17448 13.3125 3.97917ZM8.27083 6.97917C8.42448 7.28906 8.58073 7.60677 8.72917 7.9375C5.88021 8.72656 3.83333 11.1432 2.95833 12.3542C1.95052 11.1875 1.33333 9.66667 1.33333 8C1.33333 7.97135 1.33333 7.94531 1.33333 7.91667C2.23438 7.92708 5.09896 7.86458 8.27083 6.97917ZM12.0625 8.875C13.2526 8.875 14.0755 9.04167 14.5625 9.16667C14.2526 10.9427 13.25 12.4661 11.8333 13.4583C11.5677 11.8646 11.1302 10.349 10.6042 8.95833C11.1302 8.90625 11.6276 8.875 12.0625 8.875ZM9.25 9.1875C9.84896 10.7083 10.3516 12.3776 10.6042 14.1458C9.80729 14.4818 8.92188 14.6667 8 14.6667C6.47135 14.6667 5.0599 14.1536 3.9375 13.2917C4.6224 12.3542 6.63542 9.85938 9.25 9.1875Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img2-agent.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Agent 02</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">Mr. Join Naldo</p>
+                                <div class="same__detail">
+                                    <a href="#">
+                                        <svg width="8" height="16" viewBox="0 0 8 16" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 5.32071H5.32067V3.80052C5.32067 3.0161 5.38451 2.52204 6.50869 2.52204H7.92855V0.104941C7.23762 0.0334917 6.5429 -0.00147268 5.84741 4.75059e-05C3.78527 4.75059e-05 2.28029 1.25952 2.28029 3.57173V5.32071H0V8.36109L2.28029 8.36033V15.2019H5.32067V8.35881L7.65112 8.35805L8 5.32071Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 1.53902C15.4111 1.80055 14.7785 1.97654 14.1145 2.05592C14.7927 1.64978 15.3126 1.00673 15.5576 0.239991C14.9237 0.615977 14.221 0.889197 13.4727 1.03688C12.874 0.398754 12.0211 0 11.0771 0C9.26426 0 7.79478 1.4701 7.79478 3.28234C7.79478 3.53956 7.82431 3.79062 7.8797 4.03C5.1518 3.89339 2.73343 2.58636 1.1138 0.599977C0.831968 1.08488 0.670128 1.64855 0.670128 2.25099C0.670128 3.38941 1.24918 4.39429 2.12976 4.98258C1.59194 4.96535 1.0855 4.81766 0.643052 4.57213C0.643052 4.58629 0.643052 4.59921 0.643052 4.61336C0.643052 6.20407 1.77409 7.53079 3.27618 7.8317C3.00112 7.90677 2.71066 7.94677 2.41098 7.94677C2.19992 7.94677 1.99377 7.92585 1.79378 7.88831C2.21161 9.19226 3.42387 10.1418 4.86012 10.1682C3.73709 11.0488 2.32176 11.5737 0.783355 11.5737C0.518749 11.5737 0.257221 11.5583 0 11.5276C1.45287 12.4586 3.17772 13.002 5.03181 13.002C11.0697 13.002 14.3705 8.00031 14.3705 3.66263C14.3705 3.52048 14.3674 3.37895 14.3613 3.23803C15.0031 2.77466 15.56 2.19684 16 1.53902Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0C3.58854 0 0 3.58854 0 8C0 12.4115 3.58854 16 8 16C12.4115 16 16 12.4115 16 8C16 3.58854 12.4115 0 8 0ZM8 1.33333C9.6901 1.33333 11.2214 1.96875 12.3958 3C12.2708 3.17448 12.1016 3.38542 11.8333 3.64583C11.263 4.19792 10.3516 4.86198 8.95833 5.375C8.01563 3.63281 7.09115 2.32292 6.47917 1.5C6.96615 1.38802 7.47656 1.33333 8 1.33333ZM5.16667 1.95833C5.71354 2.67448 6.6875 4.0026 7.66667 5.77083C4.95573 6.48958 2.46875 6.58073 1.47917 6.58333C1.92188 4.52344 3.30729 2.82813 5.16667 1.95833ZM13.3125 3.97917C14.125 5.05469 14.6302 6.38542 14.6667 7.83333C14.0729 7.70052 13.1979 7.57031 12.0625 7.5625C11.4714 7.5599 10.8021 7.60156 10.0833 7.6875C9.91667 7.30729 9.73698 6.9401 9.5625 6.58333C11.0573 6.01042 12.0755 5.25521 12.75 4.60417C12.9792 4.38021 13.1589 4.17448 13.3125 3.97917ZM8.27083 6.97917C8.42448 7.28906 8.58073 7.60677 8.72917 7.9375C5.88021 8.72656 3.83333 11.1432 2.95833 12.3542C1.95052 11.1875 1.33333 9.66667 1.33333 8C1.33333 7.97135 1.33333 7.94531 1.33333 7.91667C2.23438 7.92708 5.09896 7.86458 8.27083 6.97917ZM12.0625 8.875C13.2526 8.875 14.0755 9.04167 14.5625 9.16667C14.2526 10.9427 13.25 12.4661 11.8333 13.4583C11.5677 11.8646 11.1302 10.349 10.6042 8.95833C11.1302 8.90625 11.6276 8.875 12.0625 8.875ZM9.25 9.1875C9.84896 10.7083 10.3516 12.3776 10.6042 14.1458C9.80729 14.4818 8.92188 14.6667 8 14.6667C6.47135 14.6667 5.0599 14.1536 3.9375 13.2917C4.6224 12.3542 6.63542 9.85938 9.25 9.1875Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="same">
+                        <div class="same__img">
+                            <a href="#"><img src="./img/img3-agent.jpg" alt="luxestate"></a>
+                        </div>
+                        <div class="same__content">
+                            <h3 class="same__title">
+                                <a href="#">Agent 03</a>
+                            </h3>
+                            <div class="same__info">
+                                <p class="same__yellow">Mr. Leo Bubble</p>
+                                <div class="same__detail">
+                                    <a href="#">
+                                        <svg width="8" height="16" viewBox="0 0 8 16" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 5.32071H5.32067V3.80052C5.32067 3.0161 5.38451 2.52204 6.50869 2.52204H7.92855V0.104941C7.23762 0.0334917 6.5429 -0.00147268 5.84741 4.75059e-05C3.78527 4.75059e-05 2.28029 1.25952 2.28029 3.57173V5.32071H0V8.36109L2.28029 8.36033V15.2019H5.32067V8.35881L7.65112 8.35805L8 5.32071Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="16" height="14" viewBox="0 0 16 14" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16 1.53902C15.4111 1.80055 14.7785 1.97654 14.1145 2.05592C14.7927 1.64978 15.3126 1.00673 15.5576 0.239991C14.9237 0.615977 14.221 0.889197 13.4727 1.03688C12.874 0.398754 12.0211 0 11.0771 0C9.26426 0 7.79478 1.4701 7.79478 3.28234C7.79478 3.53956 7.82431 3.79062 7.8797 4.03C5.1518 3.89339 2.73343 2.58636 1.1138 0.599977C0.831968 1.08488 0.670128 1.64855 0.670128 2.25099C0.670128 3.38941 1.24918 4.39429 2.12976 4.98258C1.59194 4.96535 1.0855 4.81766 0.643052 4.57213C0.643052 4.58629 0.643052 4.59921 0.643052 4.61336C0.643052 6.20407 1.77409 7.53079 3.27618 7.8317C3.00112 7.90677 2.71066 7.94677 2.41098 7.94677C2.19992 7.94677 1.99377 7.92585 1.79378 7.88831C2.21161 9.19226 3.42387 10.1418 4.86012 10.1682C3.73709 11.0488 2.32176 11.5737 0.783355 11.5737C0.518749 11.5737 0.257221 11.5583 0 11.5276C1.45287 12.4586 3.17772 13.002 5.03181 13.002C11.0697 13.002 14.3705 8.00031 14.3705 3.66263C14.3705 3.52048 14.3674 3.37895 14.3613 3.23803C15.0031 2.77466 15.56 2.19684 16 1.53902Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#1f373d"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 0C3.58854 0 0 3.58854 0 8C0 12.4115 3.58854 16 8 16C12.4115 16 16 12.4115 16 8C16 3.58854 12.4115 0 8 0ZM8 1.33333C9.6901 1.33333 11.2214 1.96875 12.3958 3C12.2708 3.17448 12.1016 3.38542 11.8333 3.64583C11.263 4.19792 10.3516 4.86198 8.95833 5.375C8.01563 3.63281 7.09115 2.32292 6.47917 1.5C6.96615 1.38802 7.47656 1.33333 8 1.33333ZM5.16667 1.95833C5.71354 2.67448 6.6875 4.0026 7.66667 5.77083C4.95573 6.48958 2.46875 6.58073 1.47917 6.58333C1.92188 4.52344 3.30729 2.82813 5.16667 1.95833ZM13.3125 3.97917C14.125 5.05469 14.6302 6.38542 14.6667 7.83333C14.0729 7.70052 13.1979 7.57031 12.0625 7.5625C11.4714 7.5599 10.8021 7.60156 10.0833 7.6875C9.91667 7.30729 9.73698 6.9401 9.5625 6.58333C11.0573 6.01042 12.0755 5.25521 12.75 4.60417C12.9792 4.38021 13.1589 4.17448 13.3125 3.97917ZM8.27083 6.97917C8.42448 7.28906 8.58073 7.60677 8.72917 7.9375C5.88021 8.72656 3.83333 11.1432 2.95833 12.3542C1.95052 11.1875 1.33333 9.66667 1.33333 8C1.33333 7.97135 1.33333 7.94531 1.33333 7.91667C2.23438 7.92708 5.09896 7.86458 8.27083 6.97917ZM12.0625 8.875C13.2526 8.875 14.0755 9.04167 14.5625 9.16667C14.2526 10.9427 13.25 12.4661 11.8333 13.4583C11.5677 11.8646 11.1302 10.349 10.6042 8.95833C11.1302 8.90625 11.6276 8.875 12.0625 8.875ZM9.25 9.1875C9.84896 10.7083 10.3516 12.3776 10.6042 14.1458C9.80729 14.4818 8.92188 14.6667 8 14.6667C6.47135 14.6667 5.0599 14.1536 3.9375 13.2917C4.6224 12.3542 6.63542 9.85938 9.25 9.1875Z"
+                                                fill="#1f373d" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="location pad">
+            <div class="container">
+                <div class="location__items">
+                    <div class="location__items-left">
+                        <div class="location__items-img">
+                            <img src="./img/img1-location.jpg" alt="luxestate">
+                        </div>
+                        <a href="https://goo.gl/maps/C7Dp9CgmEg42nHCVA" target="_blank">
+                            <img srcset="./img/icon-location@2x.png 2x" alt="luxestate">
+                            <span>Melbourne,Australia</span>
+                        </a>
+                    </div>
+                    <div class="location__items-right">
+                        <div class="textbox">
+                            <h2 class="heading lv3">Super Awesome Add</h2>
+                            <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we
+                                need a recap by eod, cob or whatever comes
+                                first agile at the end of the day. Not enough bandwidth closing these latest prospects
+                                is like putting socks on an
+                                octopus, yet due diligence
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location__items">
+                    <div class="location__items-left">
+                        <div class="location__items-img">
+                            <img src="./img/img2-location.jpg" alt="luxestate">
+                        </div>
+                        <a href="https://goo.gl/maps/C7Dp9CgmEg42nHCVA" target="_blank">
+                            <img srcset="./img/icon-location@2x.png 2x" alt="luxestate">
+                            <span>Melbourne,Australia</span>
+                        </a>
+                    </div>
+                    <div class="location__items-right">
+                        <div class="textbox">
+                            <h2 class="heading lv3">Super Awesome Add</h2>
+                            <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we
+                                need a recap by eod, cob or whatever comes
+                                first agile at the end of the day. Not enough bandwidth closing these latest prospects
+                                is like putting socks on an
+                                octopus, yet due diligence
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location__items">
+                    <div class="location__items-left">
+                        <div class="location__items-img">
+                            <img src="./img/img3-location.jpg" alt="luxestate">
+                        </div>
+                    </div>
+                    <div class="location__items-right">
+                        <div class="textbox">
+                            <h2 class="heading lv3">Super Awesome Add</h2>
+                            <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we
+                                need a recap by eod, cob or whatever comes
+                                first agile at the end of the day. Not enough bandwidth closing these latest prospects
+                                is like putting socks on an
+                                octopus, yet due diligence
+                            </p>
+                            <a href="#" class="ru__btn location">Show Me More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="touch pad scbg">
+            <div class="touch__wrapper">
+                <div class="textbox">
+                    <h2 class="heading lv2">Get In Touch</h2>
+                    <p class="des">In this space market-facing, yet UI work flows , or bake it in. Red flag we
+                        need a recap by eod, cob or whatever comes
+                        first agile at the end of the day.
+                    </p>
+                </div>
+                <form action="#" class="touch__form">
+                    <div class="touch__form-input">
+                        <input type="text" placeholder="Name">
+                    </div>
+
+                    <div class="touch__form-input">
+                        <input type="text" placeholder="Email">
+                    </div>
+
+                    <div class="touch__form-input">
+                        <select name="" id="">
+                            <option value="Vietnam">VN</option>
+                            <option value="Japanese">JP</option>
+                            <option value="Singapore">SG</option>
+                            <option value="India">IN</option>
+                            <option value="Indonesia">IND</option>
+                            <option value="Thailand">TH</option>
+                            <option value="America">US</option>
+                            <option value="Germany">DE</option>
+                            <option value="England">ENG</option>
+                        </select>
+                        <input type="number" placeholder="(+84) 123 456 789">
+                    </div>
+
+                    <div class="touch__form-input">
+                        <textarea name="" id="" placeholder="Tell us something...."></textarea>
+                    </div>
+
+                    <div class="touch__form-input">
+                        <label class="touch__same-title">Select the services</label>
+                        <div class="radio__wrapper">
+                            <div>
+                                <input type="radio" name="service" id="renting">
+                                <label for="renting">Renting</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="service" id="selling">
+                                <label for="selling">Selling</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="service" id="building">
+                                <label for="building">Benting</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="touch__form-input">
+                        <label class="touch__same-title">Which channel you want to connect?</label>
+                        <div class="check__wrapper">
+                            <div>
+                                <input type="checkbox" name="opt1" id="opt1">
+                                <label for="opt1">Facebook</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="opt2" id="opt2">
+                                <label for="opt2">Email</label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="opt3" id="opt3">
+                                <label for="opt3">Phone</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="ru__btn change">Send Us</button>
+                </form>
+            </div>
+
+            <div class="touch__img">
+                <img src="./img/img-inTouch.jpg" alt="luxestate">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer__top">
+                <h2 class="heading lv2">luxestate<br>
+                    Explore Real Estate</h2>
+                <form action="">
+                    <input type="text" placeholder="Subscribe To Our Newsletter">
+                    <button type="submit"><img srcset="./img/icon-arrowRightpng@2x.png 2x" alt="luxestate"></button>
+                </form>
+            </div>
+
+            <div class="footer__bot">
+                <div class="footer__bot-left">
+                    <a href="./"><img srcset="./img/logo-luxestateWhite@2x.png 2x" alt="luxestate"></a>
+                    <p>© 2023 - Luxestate,<br>
+                        All Right Reserved</p>
+                </div>
+
+                <div class="footer__bot-right">
+                    <div class="footer__bot-items">
+                        <p>LUXESTATE</p>
+                        <ul>
+                            <li><a href="#">Agents</a></li>
+                            <li><a href="#">Hunters</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bot-items">
+                        <p>COMPANY</p>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Social</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bot-items">
+                        <p>PRODUCT</p>
+                        <ul>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">How It Works</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__bot-items">
+                        <p>SERVICES</p>
+                        <ul>
+                            <li><a href="#">Renting</a></li>
+                            <li><a href="#">Selling</a></li>
+                            <li><a href="#">Building</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="backBtn">
+        <figure>
+            <img src="./img/icon-arrowDown.png" alt="luxestate">
+        </figure>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
